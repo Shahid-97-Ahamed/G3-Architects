@@ -11,6 +11,15 @@
 .disply-flex{
     display: flex;
 }
+.btn-primary{
+    background-color: #ff900e;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
 /* Dark Gray-2 */
 .text-gray{
     color: #424242;
@@ -23,10 +32,16 @@
     background-color: rgba(255, 144, 14, 0.1);
 }
 /* Nav-styls */
+
 .navbar{
     justify-content: space-between;
+    align-items: center;
 }
 /* Nav-links style */
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+}
 .nav-items{
     list-style: none;
     margin-right: 30px;
@@ -40,3 +55,28 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+/* Banner Content Start */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4em;
+}
+.banner-img{
+    width: 100%;
+}
+/* Banner Content End */
+
+/* Resposive Layout Start */
+@media screen and (max-width:576px) {
+    .navbar,.nav-links{
+        flex-direction: column;
+    }
+}
+
+
+/* Resposive Layout Ends */
